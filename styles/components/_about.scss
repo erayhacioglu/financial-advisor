@@ -1,0 +1,89 @@
+/*About*/
+.about-section {
+	width: 100%;
+	height: auto;
+	padding: 25px 0;
+	background: $section-color;
+	.about {
+		width: 100%;
+		height: auto;
+		@include grid(2, 25px);
+		.about-photo {
+			width: 100%;
+			height: 100%;
+			border-radius: 8px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			.about-img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: 8px;
+			}
+		}
+		.about-content {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			.about-content-title {
+				@include text(2rem, $primary-color, 700);
+				letter-spacing: -1px;
+				margin-bottom: 15px;
+			}
+			.about-content-important-text {
+				@include text(1.3rem, $secondary-color, 700);
+				letter-spacing: 1px;
+				margin-bottom: 10px;
+			}
+			.about-content-text {
+				@include text(1.2rem, 600, gray);
+				text-indent: 20px;
+				margin-bottom: 10px;
+			}
+			.about-content-link {
+				width: 150px;
+				text-align: center;
+				@include text(1rem, white, $secondary-color);
+				transition: all 300ms linear;
+				border-radius: 25px;
+				padding: 10px;
+				background: $primary-color;
+				&:hover {
+					background: $secondary-color;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.about-section .about {
+		@include grid(1, 20px);
+		.about-photo {
+			height: 50vh;
+		}
+		.about-content {
+			text-align: center;
+			.about-content-link {
+				margin: auto;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.about-section .about .about-photo {
+		height: 40vh;
+	}
+	.about .about-content {
+		.about-content-important-text {
+			font-size: 1.2rem;
+		}
+		.about-content-text {
+			font-size: 1.1rem;
+		}
+	}
+}

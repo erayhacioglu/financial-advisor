@@ -1,0 +1,10 @@
+@mixin text($size, $color, $weight) {
+	font-size: $size;
+	color: $color;
+	font-weight: $weight;
+}
+@mixin grid($sutun, $margin) {
+	display: grid;
+	grid-template-columns: repeat($sutun, 1fr);
+	gap: $margin;
+}
