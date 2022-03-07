@@ -50,16 +50,16 @@ export const services = [
 	{
 		img: './company.png',
 		title: 'Şirket Kurma',
-		text: 'Sizlere kuruluş aşamasından imza beyanlarının hazırlanmasına, Ticaret Sicil Müdürlüğü’ne başvurudan gerekli evrakların temini konusunda hizmetimizin her aşamasında destek sağlamaktayız.',
+		text: 'Sizlere kuruluş aşamasından itibaren hizmetimizin her aşamasında destek sağlamaktayız.',
 	},
 	{
 		img: './accounting.png',
-		title: 'Ön Muhasebe',
-		text: 'Gelirlerin tahsili, giderlerin ödenmesi, parayla ifade edilebilen değerler ile emanetlerin alınması, saklanması, ilgililere verilmesi, gönderilmesi ve diğer tüm malî işlemlerin kayıtlarının yapılması ve raporlanmasını sağlamaktayız',
+		title: 'Muhasebe',
+		text: 'Tüm malî işlemlerin kayıtlarının yapılması ve raporlanmasını sağlamaktayız',
 	},
 	{
 		img: './financial-advisor.png',
 		title: 'Mali Müşavirlik',
-		text: 'Uzman kadromuz ve yöneticilerimizle, mükelleflerimizin operasyonel ve finansal hedeflerine ulaşmasını sağlamak amacıyla hizmet vermekteyiz.',
+		text: 'Mükelleflerimizin hedeflerine ulaşmasını sağlamak amacıyla hizmet vermekteyiz.',
 	},
 ];

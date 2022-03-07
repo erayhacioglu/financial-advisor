@@ -2,60 +2,78 @@
 .service-section {
 	width: 100%;
 	height: auto;
-	background: #fff;
-	padding: 20px 0 25px 0;
+	padding: 20px 0;
 	.service {
 		width: 100%;
-		@include grid(3, 50px);
-		.service-card {
-			min-height: 315px;
-			border-radius: 4px;
-			background: $primary-color;
+		height: auto;
+		@include grid(3, 25px);
+		.service-box {
+			width: 100%;
+			height: auto;
+			min-height: 250px;
+			background: $section-color;
+			border: 1px solid $section-color;
+			border-radius: 5px;
 			padding: 25px;
-			transition: 250ms;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			transition: 300ms;
 			&:hover {
-				transform: translateY(-8px);
+				transform: translateY(-12px);
 			}
 			.service-icon {
-				width: 65px;
-				height: 65px;
-				border-radius: 99px;
-				background: #fff;
+				width: 50px;
+				height: 50px;
+				border-radius: 5px;
+				background: $primary-color;
 				display: flex;
 				align-items: center;
 				justify-content: center;
 				.service-img {
-					width: 40px;
-					height: 40px;
+					height: 35px;
+					object-fit: contain;
 				}
 			}
 			.service-title {
-				text-align: center;
-				@include text(1.5rem, #fff, 700);
+				@include text(1.5rem, $primary-color, 700);
 				margin: 15px 0;
+				text-align: center;
 			}
 			.service-text {
-				text-align: justify;
-				@include text(1rem, whitesmoke, 500);
+				@include text(1.2rem, $text-color, 600);
+				text-align: center;
+			}
+		}
+	}
+	.service-link-box {
+		width: 100%;
+		margin-top: 15px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.service-link {
+			background: $primary-color;
+			color: #fff;
+			padding: 10px 30px;
+			border-radius: 4px;
+			transition: 300ms;
+			&:hover {
+				background: $secondary-color;
 			}
 		}
 	}
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 850px) {
 	.service-section .service {
-		@include grid(2, 50px);
+		@include grid(2, 25px);
 	}
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 650px) {
 	.service-section .service {
-		@include grid(1, 20px);
-		.service-card .service-title {
-			font-size: 2rem;
-		}
-		.service-card .service-text {
-			font-size: 1.2rem;
-		}
+		@include grid(1, 15px);
 	}
 }
