@@ -24,7 +24,7 @@ const Introduction = () => {
 						</h2>
 
 						<h2 className='introduction-text'>hizmetleri vermektedir.</h2>
-						<Link href='/'>
+						<Link href='#iletisim'>
 							<a className='introduction-link'>Bize Ulaşın</a>
 						</Link>
 					</div>

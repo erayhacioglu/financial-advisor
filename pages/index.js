@@ -6,6 +6,7 @@ import Service from '../components/Service';
 import Faqs from '../components/Faqs';
 import Testimonials from '../components/Testimonials';
 import Form from '../components/Form';
+import CallToAction from '../components/CallToAction';
 
 const Home = () => {
 	return (
@@ -21,7 +22,7 @@ const Home = () => {
 			<Service />
 			<Faqs />
 			<Testimonials />
-			<Form />
+			<CallToAction />
 		</>
 	);
 };
