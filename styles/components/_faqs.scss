@@ -66,7 +66,7 @@
 					padding: 15px;
 					text-align: justify;
 					text-indent: 20px;
-					@include text(1rem, #fff, 500);
+					@include text(1.15rem, #fff, 500);
 					display: none;
 					transition: 250ms;
 					&.active {
@@ -92,5 +92,15 @@
 				height: 60%;
 			}
 		}
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.question-section
+		.question
+		.question-content
+		.question-header
+		.question-header-text {
+		font-size: 1rem;
 	}
 }
