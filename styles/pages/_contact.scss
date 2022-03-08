@@ -35,8 +35,8 @@
 					padding: 10px;
 					justify-content: center;
 					.contact-info-box-icon {
-						width: 45px;
-						height: 45px;
+						min-width: 45px;
+						min-height: 45px;
 						border-radius: 50%;
 						border: 2px dotted $primary-color;
 						display: flex;
