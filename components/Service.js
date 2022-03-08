@@ -9,17 +9,19 @@ const Service = () => {
 				<SectionHeading heading='Neler Yapıyoruz?' />
 				<div className='service'>
 					{services.map((item, key) => (
-						<div className='service-box' key={key}>
-							<div className='service-icon'>
-								<img
-									src={item.img}
-									alt='hizmet-resim'
-									className='service-img'
-								/>
-							</div>
-							<h2 className='service-title'>{item.title}</h2>
-							<p className='service-text'>{item.text}</p>
-						</div>
+						<Link href={`/hizmetlerimiz/${item.slug}`}>
+							<a className='service-box' key={key}>
+								<div className='service-icon'>
+									<img
+										src={item.img}
+										alt='hizmet-resim'
+										className='service-img'
+									/>
+								</div>
+								<h2 className='service-title'>{item.title}</h2>
+								<p className='service-text'>{item.text}</p>
+							</a>
+						</Link>
 					))}
 				</div>
 				<div className='service-link-box'>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-const PageHeader = ({ title }) => {
+const PageHeader = ({ title, path }) => {
 	return (
 		<div className='page-header-section'>
 			<div className='container'>
@@ -11,7 +11,10 @@ const PageHeader = ({ title }) => {
 						<Link href='/'>
 							<a>Anasayfa</a>
 						</Link>
-						&nbsp;/&nbsp;<span>{title}</span>
+						&nbsp;/&nbsp;
+						<span style={{ color: `${path ? '#16132f' : ''}` }}>{title}</span>
+						&nbsp;
+						{path && <span>/{path.split('/')[2]}</span>}
 					</div>
 				</div>
 			</div>

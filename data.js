@@ -49,18 +49,48 @@ export const questions = [
 export const services = [
 	{
 		img: './company.png',
+		slug: 'sirket-kurma',
 		title: 'Şirket Kurma',
 		text: 'Sizlere kuruluş aşamasından itibaren hizmetimizin her aşamasında destek sağlamaktayız.',
 	},
 	{
 		img: './accounting.png',
+		slug: 'muhasebe',
 		title: 'Muhasebe',
 		text: 'Tüm malî işlemlerin kayıtlarının yapılması ve raporlanmasını sağlamaktayız',
 	},
 	{
 		img: './financial-advisor.png',
+		slug: 'mali-musavirlik',
 		title: 'Mali Müşavirlik',
 		text: 'Mükelleflerimizin hedeflerine ulaşmasını sağlamak amacıyla hizmet vermekteyiz.',
+	},
+];
+
+export const servicePage = [
+	{
+		img: 'financial-advisor-banner.jpg',
+		slug: 'mali-musavirlik',
+		title: 'Mali Müşavirlik',
+		text: 'Mali Müşavirlik ile ilgili Yazı',
+	},
+	{
+		img: 'accounting-banner.jpg',
+		slug: 'muhasebe',
+		title: 'Muhasebe',
+		text: 'Muhasebe ile ilgili Yazı',
+	},
+	{
+		img: 'consultancy-banner.jpg',
+		slug: 'danismanlik',
+		title: 'Danışmanlık',
+		text: 'Danışmanlık ile ilgili Yazı',
+	},
+	{
+		img: 'company-banner.jpg',
+		slug: 'sirket-kurma',
+		title: 'Şirket Kurma',
+		text: "Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.",
 	},
 ];
 
