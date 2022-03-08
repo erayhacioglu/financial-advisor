@@ -11,7 +11,7 @@ const PageHeader = ({ title }) => {
 						<Link href='/'>
 							<a>Anasayfa</a>
 						</Link>
-						&nbsp;/&nbsp;<span>İletişim</span>
+						&nbsp;/&nbsp;<span>{title}</span>
 					</div>
 				</div>
 			</div>

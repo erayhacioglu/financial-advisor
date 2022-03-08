@@ -1,0 +1,43 @@
+/*About Page*/
+.about-page-section {
+	width: 100%;
+	height: auto;
+	padding: 25px 0;
+	margin: 10px 0;
+	.about-page {
+		width: 100%;
+		height: auto;
+		.about-page-picture {
+			width: 100%;
+			height: 300px;
+			border-radius: 10px;
+			overflow: hidden;
+			.about-page-img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		.about-page-content {
+			width: 100%;
+			margin-top: 10px;
+			.about-page-title {
+				@include text(2.8rem, $primary-color, 700);
+				margin-bottom: 10px;
+				letter-spacing: -1px;
+			}
+			.about-page-text {
+				@include text(1.2rem, $text-color, 600);
+				text-indent: 20px;
+				letter-spacing: 1px;
+				word-spacing: 1px;
+				text-align: left;
+				.about-page-important {
+					@include text(1.3rem, $secondary-color, 700);
+					display: block;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}

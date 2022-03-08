@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const About = () => {
 	return (
 		<div className='about-section'>
@@ -18,9 +20,9 @@ const About = () => {
 							alanında Levent, İstanbul'daki bürosundan İstanbul ve çevresindeki
 							mükelleflerimize hizmet vermektedir.
 						</p>
-						<a href='/' className='about-content-link'>
-							Devamı
-						</a>
+						<Link href='/hakkimizda'>
+							<a className='about-content-link'>Devamı</a>
+						</Link>
 					</div>
 				</div>
 			</div>
