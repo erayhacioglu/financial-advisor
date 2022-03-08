@@ -1,0 +1,144 @@
+/*Contact*/
+.contact-section {
+	width: 100%;
+	height: auto;
+	padding: 20px 0;
+	margin: 25px 0 15px 0;
+
+	.contact {
+		width: 100%;
+		height: 80vh;
+		@include grid(2, 25px);
+		.contact-content {
+			width: 100%;
+			height: 100%;
+			padding: 25px 5px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			.contact-title {
+				@include text(1.8rem, $primary-color, 700);
+			}
+			.contact-info {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-around;
+				.contact-info-box {
+					width: 100%;
+					height: 33%;
+					display: flex;
+					flex-direction: column;
+					padding: 10px;
+					justify-content: center;
+					.contact-info-box-icon {
+						width: 45px;
+						height: 45px;
+						border-radius: 50%;
+						border: 2px dotted $primary-color;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						i {
+							@include text(1.2rem, $primary-color, 700);
+						}
+					}
+					.contact-info-box-text {
+						@include text(1.2rem, $primary-color, 600);
+						margin-top: 10px;
+					}
+				}
+			}
+		}
+		.contact-form-box {
+			width: 100%;
+			height: 100%;
+			padding: 25px 5px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			background: $section-color;
+			.contact-form-title {
+				@include text(1.8rem, $primary-color, 700);
+			}
+			.contact-form {
+				width: 100%;
+				height: 100%;
+				padding: 0 20px;
+				.contact-form-fields {
+					width: 100%;
+					height: auto;
+					padding: 5px;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+
+					.contact-form-text {
+						@include text(1.2rem, $primary-color, 600);
+						margin-bottom: 5px;
+					}
+					.contact-form-input {
+						width: 100%;
+						height: 30px;
+						border-radius: 5px;
+						padding: 10px;
+						color: $primary-color;
+						border: 1px solid $primary-color;
+						&:focus {
+							border-width: 2px;
+						}
+					}
+					.contact-form-textarea {
+						width: 100%;
+						min-height: 75px;
+						border-radius: 5px;
+						padding: 10px;
+						color: $primary-color;
+						border: 1px solid $primary-color;
+						&:focus {
+							border-width: 2px;
+						}
+					}
+					.contact-form-btn {
+						width: 100%;
+						height: 35px;
+						background: $primary-color;
+						color: white;
+						border-radius: 4px;
+						margin-top: 5px;
+						transition: 300ms;
+						&:hover {
+							background: $secondary-color;
+						}
+					}
+				}
+			}
+		}
+	}
+	.contact-map {
+		width: 100%;
+		height: 50vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+		border-radius: 15px;
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.contact-section {
+		.contact {
+			height: auto;
+			@include grid(1, 20px);
+		}
+		.contact-map {
+			height: 35vh;
+		}
+	}
+}

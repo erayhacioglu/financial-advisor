@@ -1,0 +1,32 @@
+/*Page Header*/
+.page-header-section {
+	width: 100%;
+	height: auto;
+	padding: 25px 0;
+	background: $section-color;
+	.page-header {
+		width: 100%;
+		height: 15vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		.page-header-title {
+			@include text(3rem, $primary-color, 700);
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+		.breadcrumbs {
+			@include text(1.2rem, $text-color, 500);
+			a {
+				color: $text-color;
+				transition: 300ms;
+				&:hover {
+					color: $primary-color;
+				}
+			}
+			span {
+				color: $primary-color;
+			}
+		}
+	}
+}

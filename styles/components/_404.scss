@@ -1,0 +1,19 @@
+/*Page Not Found*/
+.page-not-found {
+	width: 100%;
+	height: 75vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	.page-not-found-img {
+		width: 70%;
+		height: 70%;
+		object-fit: contain;
+	}
+	.page-not-found-text {
+		@include text(2rem, $text-color, 700);
+		margin-top: 25px;
+		text-align: center;
+	}
+}

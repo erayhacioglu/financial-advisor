@@ -17,7 +17,7 @@ const CallToAction = () => {
 								Bizimle iletişime geçerek, fiyat alabilir aklınıza takılan
 								soruları sorabilirsiniz.
 							</p>
-							<Link href='/'>
+							<Link href='/iletisim'>
 								<a className='action-link'>Bize Ulaşın</a>
 							</Link>
 						</div>
