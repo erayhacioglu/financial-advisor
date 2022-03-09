@@ -8,10 +8,10 @@ const Service = () => {
 	const { query, asPath } = router;
 
 	const findService = servicePage.find((item) => item.slug === query.id);
-	console.log(findService);
+
 	return (
 		<>
-			<PageHeader title='Hizmetlerimiz' path={asPath} />
+			<PageHeader title={findService?.title} service />
 			<div className='service-page-section'>
 				<div className='container'>
 					<div className='service-page'>

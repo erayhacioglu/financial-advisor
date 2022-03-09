@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-const PageHeader = ({ title, path }) => {
+const PageHeader = ({ title, service }) => {
 	return (
 		<div className='page-header-section'>
 			<div className='container'>
@@ -12,9 +12,13 @@ const PageHeader = ({ title, path }) => {
 							<a>Anasayfa</a>
 						</Link>
 						&nbsp;/&nbsp;
-						<span style={{ color: `${path ? '#16132f' : ''}` }}>{title}</span>
-						&nbsp;
-						{path && <span>/{path.split('/')[2]}</span>}
+						{service ? (
+							<>
+								Hizmetlerimiz&nbsp;/&nbsp;<span>{title}</span>
+							</>
+						) : (
+							<span>{title}</span>
+						)}
 					</div>
 				</div>
 			</div>

@@ -29,3 +29,14 @@
 		}
 	}
 }
+
+@media only screen and (max-width: 768px) {
+	.page-header-section .page-header {
+		.page-header-title {
+			font-size: 2.1rem;
+		}
+		.breadcrumbs {
+			font-size: 0.9rem;
+		}
+	}
+}
