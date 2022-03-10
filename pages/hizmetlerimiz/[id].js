@@ -1,7 +1,7 @@
 import PageHeader from '../../components/PageHeader';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { servicePage } from '../../data';
+import { servicePage } from '../../utils/data';
 
 const Service = () => {
 	const router = useRouter();

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import SectionHeading from './SectionHeading';
-import { services } from '../data';
+import { services } from '../utils/data';
 
 const Service = () => {
 	return (
@@ -9,8 +9,8 @@ const Service = () => {
 				<SectionHeading heading='Neler Yapıyoruz?' />
 				<div className='service'>
 					{services.map((item, key) => (
-						<Link href={`/hizmetlerimiz/${item.slug}`}>
-							<a className='service-box' key={key}>
+						<Link href={`/hizmetlerimiz/${item.slug}`} key={key}>
+							<a className='service-box'>
 								<div className='service-icon'>
 									<img
 										src={item.img}

@@ -1,4 +1,4 @@
-import { brandLogos } from '../data';
+import { brandLogos } from '../utils/data';
 import Marquee from 'react-fast-marquee';
 
 const BrandLogos = () => {

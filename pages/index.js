@@ -5,7 +5,6 @@ import About from '../components/About';
 import Service from '../components/Service';
 import Faqs from '../components/Faqs';
 import Testimonials from '../components/Testimonials';
-import Form from '../components/Form';
 import CallToAction from '../components/CallToAction';
 
 const Home = () => {

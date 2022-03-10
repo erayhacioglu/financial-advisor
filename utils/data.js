@@ -111,3 +111,48 @@ export const contactInfo = [
 
 export const mapSrc =
 	'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.3058943579395!2d28.901715714785286!3d41.062305724048386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab062ddd1d97d%3A0xca4b3799c4d0c31a!2zxZ5lbXNpcGHFn2EsIDguIFNrLiwgMzQyNTAgR2F6aW9zbWFucGHFn2EvxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1635808251542!5m2!1str!2str';
+
+export const testimonials = [
+	{
+		img: 'https://media-exp1.licdn.com/dms/image/C4E03AQHOAn33FNvwjQ/profile-displayphoto-shrink_100_100/0/1629804663908?e=1651104000&v=beta&t=s3UnZKKSWpA2X17S2DNw_dLYXXOYccoEOw_WXCirxSU',
+		name: 'Eray Hacıoğlu1',
+		job: 'Bilgisayar Mühendisi',
+		message:
+			'Bizle çalışmaktan ne kadar mutlu olduklarıyla ilgili bu uzunlukta yazı gelecek.',
+	},
+	{
+		img: 'https://media-exp1.licdn.com/dms/image/C4E03AQHOAn33FNvwjQ/profile-displayphoto-shrink_100_100/0/1629804663908?e=1651104000&v=beta&t=s3UnZKKSWpA2X17S2DNw_dLYXXOYccoEOw_WXCirxSU',
+		name: 'Eray Hacıoğlu2',
+		job: 'Bilgisayar Mühendisi',
+		message:
+			'Bizle çalışmaktan ne kadar mutlu olduklarıyla ilgili bu uzunlukta yazı gelecek.',
+	},
+	{
+		img: 'https://media-exp1.licdn.com/dms/image/C4E03AQHOAn33FNvwjQ/profile-displayphoto-shrink_100_100/0/1629804663908?e=1651104000&v=beta&t=s3UnZKKSWpA2X17S2DNw_dLYXXOYccoEOw_WXCirxSU',
+		name: 'Eray Hacıoğlu3',
+		job: 'Bilgisayar Mühendisi',
+		message:
+			'Bizle çalışmaktan ne kadar mutlu olduklarıyla ilgili bu uzunlukta yazı gelecek.',
+	},
+	{
+		img: 'https://media-exp1.licdn.com/dms/image/C4E03AQHOAn33FNvwjQ/profile-displayphoto-shrink_100_100/0/1629804663908?e=1651104000&v=beta&t=s3UnZKKSWpA2X17S2DNw_dLYXXOYccoEOw_WXCirxSU',
+		name: 'Eray Hacıoğlu4',
+		job: 'Bilgisayar Mühendisi',
+		message:
+			'Bizle çalışmaktan ne kadar mutlu olduklarıyla ilgili bu uzunlukta yazı gelecek.',
+	},
+	{
+		img: 'https://media-exp1.licdn.com/dms/image/C4E03AQHOAn33FNvwjQ/profile-displayphoto-shrink_100_100/0/1629804663908?e=1651104000&v=beta&t=s3UnZKKSWpA2X17S2DNw_dLYXXOYccoEOw_WXCirxSU',
+		name: 'Eray Hacıoğlu5',
+		job: 'Bilgisayar Mühendisi',
+		message:
+			'Bizle çalışmaktan ne kadar mutlu olduklarıyla ilgili bu uzunlukta yazı gelecek.',
+	},
+	{
+		img: 'https://media-exp1.licdn.com/dms/image/C4E03AQHOAn33FNvwjQ/profile-displayphoto-shrink_100_100/0/1629804663908?e=1651104000&v=beta&t=s3UnZKKSWpA2X17S2DNw_dLYXXOYccoEOw_WXCirxSU',
+		name: 'Eray Hacıoğlu6',
+		job: 'Bilgisayar Mühendisi',
+		message:
+			'Bizle çalışmaktan ne kadar mutlu olduklarıyla ilgili bu uzunlukta yazı gelecek.',
+	},
+];

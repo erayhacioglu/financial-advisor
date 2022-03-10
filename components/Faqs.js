@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import SectionHeading from './SectionHeading';
-import { questions } from '../data';
+import { questions } from '../utils/data';
 
 const Faqs = () => {
 	const [activeQuestion, setActiveQuestion] = useState(1);
