@@ -34,7 +34,8 @@
 		}
 		.testimonial-user {
 			width: 100%;
-			height: 50px;
+			min-height: 50px;
+			height: auto;
 			display: flex;
 			justify-content: center;
 			.testimonial-img {
@@ -46,13 +47,12 @@
 				height: 100%;
 				display: flex;
 				flex-direction: column;
-
 				padding-left: 5px;
 				.testimonial-name {
 					@include text(1rem, $text-color, 600);
 				}
 				.testimonial-job {
-					@include text(0.8rem, #ddd, 600);
+					@include text(0.75rem, #eee, 500);
 				}
 			}
 		}
@@ -60,6 +60,7 @@
 	.rec .rec-arrow {
 		width: 40px;
 		height: 40px;
+		border-radius: 50%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -79,5 +80,23 @@
 	}
 	.rec .rec-dot_active {
 		background: $primary-color;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.testimonial-section {
+		.rec .rec-arrow {
+			width: 40px;
+			height: 40px;
+			font-size: 1.2rem;
+		}
+		.testimonial-card .testimonial-user .testimonial-content {
+			.testimonial-name {
+				font-size: 0.875rem;
+			}
+			.testimonial-job {
+				font-size: 0.75rem;
+			}
+		}
 	}
 }
