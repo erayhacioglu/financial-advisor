@@ -3,6 +3,9 @@ import PageHeader from '../components/PageHeader';
 import { contactInfo, mapSrc } from '../utils/data';
 import { useFormik } from 'formik';
 import validationSchema from '../utils/validationSchema';
+import { toast } from 'react-toastify';
+import InputMask from 'react-input-mask';
+import axios from 'axios';
 
 const Contact = () => {
 	const { handleSubmit, handleChange, handleBlur, values, errors, touched } =
@@ -10,14 +13,30 @@ const Contact = () => {
 			initialValues: {
 				fullName: '',
 				email: '',
-				topic: '',
+				phone: '',
 				description: '',
 			},
 			onSubmit: (values) => {
-				console.log(values);
+				handleContact(values);
 			},
 			validationSchema,
 		});
+
+	const handleContact = async (values) => {
+		let config = {
+			method: 'post',
+			url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/contact`,
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			data: values,
+		};
+		try {
+			const response = await axios(config);
+			if (response.status === 200)
+				toast.success('Mesajınzı Aldık Teşekkürler!!!');
+		} catch (err) {}
+	};
 
 	return (
 		<>
@@ -81,19 +100,27 @@ const Contact = () => {
 									<span className='error-message'>{errors.email}</span>
 								)}
 								<div className='contact-form-fields'>
-									<span className='contact-form-text'>Konu</span>
-									<input
-										className={`contact-form-input ${
-											errors.topic && touched.topic && 'error'
-										}`}
-										name='topic'
-										value={values.topic}
+									<span className='contact-form-text'>Telefon</span>
+									<InputMask
+										mask='(999)-999-99-99'
+										name='phone'
+										value={values.phone}
 										onChange={handleChange}
 										onBlur={handleBlur}
-									/>
+									>
+										{(inputProps) => (
+											<input
+												type='tel'
+												className={`contact-form-input ${
+													errors.phone && touched.phone && 'error'
+												}`}
+												{...inputProps}
+											/>
+										)}
+									</InputMask>
 								</div>
-								{errors.topic && touched.topic && (
-									<span className='error-message'>{errors.topic}</span>
+								{errors.phone && touched.phone && (
+									<span className='error-message'>{errors.phone}</span>
 								)}
 								<div className='contact-form-fields'>
 									<span className='contact-form-text'>Açıklama</span>
