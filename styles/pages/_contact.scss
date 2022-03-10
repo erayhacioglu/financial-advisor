@@ -83,6 +83,7 @@
 				.error-message {
 					display: flex;
 					align-items: center;
+					padding-left: 5px;
 					@include text(1rem, crimson, 500);
 				}
 				.contact-form-fields {
