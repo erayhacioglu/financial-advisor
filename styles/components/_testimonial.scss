@@ -58,9 +58,12 @@
 		}
 	}
 	.rec .rec-arrow {
-		width: 40px;
-		height: 40px;
+		min-width: 35px;
+		min-height: 35px;
+		line-height: 0;
 		border-radius: 50%;
+		padding: 0;
+		font-size: 1.2rem;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -86,9 +89,7 @@
 @media only screen and (max-width: 500px) {
 	.testimonial-section {
 		.rec .rec-arrow {
-			width: 30px;
-			height: 30px;
-			font-size: 1.2rem;
+			display: none;
 		}
 		.testimonial-card .testimonial-user .testimonial-content {
 			.testimonial-name {

@@ -118,13 +118,13 @@
 						border-radius: 5px;
 						padding: 10px;
 						color: $primary-color;
-						border: 1px solid $primary-color;
+						border: 1.5px solid $primary-color;
 						caret-color: $primary-color;
 						&.error {
 							border: 2px solid crimson;
 						}
 						&:focus {
-							border-width: 2px;
+							border-width: 2.5px;
 						}
 					}
 					.contact-form-btn {
