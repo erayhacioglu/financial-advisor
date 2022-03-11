@@ -1,8 +1,12 @@
+import Head from 'next/head';
 import PageHeader from '../components/PageHeader';
 
 const About = () => {
 	return (
 		<>
+			<Head>
+				<title>Hakkımızda</title>
+			</Head>
 			<PageHeader title='Hakkımızda' />
 			<div className='about-page-section'>
 				<div className='container'>

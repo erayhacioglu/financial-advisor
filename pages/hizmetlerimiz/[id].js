@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import PageHeader from '../../components/PageHeader';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -11,6 +12,13 @@ const Service = () => {
 
 	return (
 		<>
+			<Head>
+				<title>{`${
+					findService
+						? 'Hizmetlerimiz | ' + findService?.title
+						: 'Hizmetlerimiz'
+				}`}</title>
+			</Head>
 			<PageHeader title={findService?.title} service />
 			<div className='service-page-section'>
 				<div className='container'>

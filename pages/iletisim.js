@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import PageHeader from '../components/PageHeader';
 import { contactInfo, mapSrc } from '../utils/data';
 import { useFormik } from 'formik';
@@ -40,6 +41,9 @@ const Contact = () => {
 
 	return (
 		<>
+			<Head>
+				<title>İletişim</title>
+			</Head>
 			<PageHeader title='İletişim' />
 			<div className='contact-section'>
 				<div className='container'>
