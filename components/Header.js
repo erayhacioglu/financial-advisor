@@ -51,50 +51,50 @@ const Header = () => {
 									Hakkımızda
 								</a>
 							</Link>
-							<Link href='/hakkimizda'>
-								<a className='menu-link' onClick={() => setDropdown(!dropdown)}>
-									Hizmetlerimiz{' '}
-									{dropdown ? (
-										<i className='fas fa-angle-up' />
-									) : (
-										<i className='fas fa-angle-down' />
-									)}
-									<div className={`dropdown-menu ${dropdown ? 'active' : ''}`}>
-										<Link href='/hizmetlerimiz/mali-musavirlik'>
-											<a
-												className='dropdown-menu-link'
-												onClick={() => setNavbar(false)}
-											>
-												Mali Müşavirlik
-											</a>
-										</Link>
-										<Link href='/hizmetlerimiz/sirket-kurma'>
-											<a
-												className='dropdown-menu-link'
-												onClick={() => setNavbar(false)}
-											>
-												Şirket Kurma
-											</a>
-										</Link>
-										<Link href='/hizmetlerimiz/danismanlik'>
-											<a
-												className='dropdown-menu-link'
-												onClick={() => setNavbar(false)}
-											>
-												Danışmanlık
-											</a>
-										</Link>
-										<Link href='/hizmetlerimiz/muhasebe'>
-											<a
-												className='dropdown-menu-link'
-												onClick={() => setNavbar(false)}
-											>
-												Muhasebe
-											</a>
-										</Link>
-									</div>
-								</a>
-							</Link>
+
+							<a className='menu-link' onClick={() => setDropdown(!dropdown)}>
+								Hizmetlerimiz{' '}
+								{dropdown ? (
+									<i className='fas fa-angle-up' />
+								) : (
+									<i className='fas fa-angle-down' />
+								)}
+								<div className={`dropdown-menu ${dropdown ? 'active' : ''}`}>
+									<Link href='/hizmetlerimiz/mali-musavirlik'>
+										<a
+											className='dropdown-menu-link'
+											onClick={() => setNavbar(false)}
+										>
+											Mali Müşavirlik
+										</a>
+									</Link>
+									<Link href='/hizmetlerimiz/sirket-kurma'>
+										<a
+											className='dropdown-menu-link'
+											onClick={() => setNavbar(false)}
+										>
+											Şirket Kurma
+										</a>
+									</Link>
+									<Link href='/hizmetlerimiz/danismanlik'>
+										<a
+											className='dropdown-menu-link'
+											onClick={() => setNavbar(false)}
+										>
+											Danışmanlık
+										</a>
+									</Link>
+									<Link href='/hizmetlerimiz/muhasebe'>
+										<a
+											className='dropdown-menu-link'
+											onClick={() => setNavbar(false)}
+										>
+											Muhasebe
+										</a>
+									</Link>
+								</div>
+							</a>
+
 							<Link href='/iletisim'>
 								<a className='menu-link' onClick={() => setNavbar(false)}>
 									İletişim
