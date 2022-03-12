@@ -12,7 +12,7 @@ export default async (req, res) => {
 			pass: process.env.pass,
 		},
 		tls: {
-			rejectUnauthorized: true,
+			rejectUnauthorized: false,
 		},
 	});
 
