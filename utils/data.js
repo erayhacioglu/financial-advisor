@@ -69,7 +69,7 @@ export const services = [
 
 export const servicePage = [
 	{
-		img: 'financial-advisor-banner.jpg',
+		img: '/financial-advisor-banner.jpg',
 		slug: 'mali-musavirlik',
 		title: 'Mali Müşavirlik',
 		text: 'Mali Müşavirlik ile ilgili Yazı',

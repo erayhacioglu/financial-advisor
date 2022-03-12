@@ -5,11 +5,14 @@ export default async (req, res) => {
 
 	const transporter = nodemailer.createTransport({
 		host: 'smtp.gmail.com',
-		port: 465,
-		secure: true,
+		port: 587,
+		secure: false,
 		auth: {
 			user: process.env.user,
 			pass: process.env.pass,
+		},
+		tls: {
+			rejectUnauthorized: false,
 		},
 	});
 

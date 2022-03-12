@@ -42,6 +42,7 @@ const Service = () => {
 									src={`../../${findService?.img}`}
 									alt={query?.id}
 									className='service-page-img'
+									loading='lazy'
 								/>
 							</div>
 							<h2 className='service-page-title'>{findService?.title}</h2>

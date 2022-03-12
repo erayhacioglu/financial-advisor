@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Head from 'next/head';
 import PageHeader from '../components/PageHeader';
 import { contactInfo, mapSrc } from '../utils/data';
@@ -9,6 +9,8 @@ import InputMask from 'react-input-mask';
 import axios from 'axios';
 
 const Contact = () => {
+	const [loading, setLoading] = useState(false);
+
 	const { handleSubmit, handleChange, handleBlur, values, errors, touched } =
 		useFormik({
 			initialValues: {
@@ -26,16 +28,19 @@ const Contact = () => {
 	const handleContact = async (values) => {
 		let config = {
 			method: 'post',
-			url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/contact`,
+			url: `/api/contact`,
 			headers: {
 				'Content-Type': 'application/json',
 			},
 			data: values,
 		};
 		try {
+			setLoading(true);
 			const response = await axios(config);
+			console.log(response);
 			if (response.status === 200)
 				toast.success('Mesajınzı Aldık Teşekkürler!!!');
+			setLoading(false);
 		} catch (err) {}
 	};
 
@@ -143,7 +148,11 @@ const Contact = () => {
 									<span className='error-message'>{errors.description}</span>
 								)}
 								<div className='contact-form-fields'>
-									<button className='contact-form-btn'>Gönder</button>
+									<button
+										className={`contact-form-btn ${loading ? 'disable' : ''}`}
+									>
+										{loading ? <span className='spinner'></span> : 'Gönder'}
+									</button>
 								</div>
 							</form>
 						</div>
