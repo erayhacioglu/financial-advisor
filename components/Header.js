@@ -33,15 +33,23 @@ const Header = () => {
 						</div>
 						<div className='navbar-btn-box'>
 							<button className='navbar-btn' onClick={() => setNavbar(!navbar)}>
-								{navbar ? <i className='fas fa-times' />:<i className='fas fa-bars' />}
+								{navbar ? (
+									<i className='fas fa-times' />
+								) : (
+									<i className='fas fa-bars' />
+								)}
 							</button>
 						</div>
 						<div className={`menu ${navbar ? 'active' : ''}`}>
 							<Link href='/'>
-								<a className='menu-link' onClick={() => setNavbar(false)}>Anasayfa</a>
+								<a className='menu-link' onClick={() => setNavbar(false)}>
+									Anasayfa
+								</a>
 							</Link>
 							<Link href='/hakkimizda'>
-								<a className='menu-link' onClick={() => setNavbar(false)}>Hakkımızda</a>
+								<a className='menu-link' onClick={() => setNavbar(false)}>
+									Hakkımızda
+								</a>
 							</Link>
 							<Link href='/hakkimizda'>
 								<a className='menu-link' onClick={() => setDropdown(!dropdown)}>
@@ -53,22 +61,44 @@ const Header = () => {
 									)}
 									<div className={`dropdown-menu ${dropdown ? 'active' : ''}`}>
 										<Link href='/hizmetlerimiz/mali-musavirlik'>
-											<a className='dropdown-menu-link' onClick={() => setNavbar(false)}>Mali Müşavirlik</a>
+											<a
+												className='dropdown-menu-link'
+												onClick={() => setNavbar(false)}
+											>
+												Mali Müşavirlik
+											</a>
 										</Link>
 										<Link href='/hizmetlerimiz/sirket-kurma'>
-											<a className='dropdown-menu-link' onClick={() => setNavbar(false)}>Şirket Kurma</a>
+											<a
+												className='dropdown-menu-link'
+												onClick={() => setNavbar(false)}
+											>
+												Şirket Kurma
+											</a>
 										</Link>
 										<Link href='/hizmetlerimiz/danismanlik'>
-											<a className='dropdown-menu-link' onClick={() => setNavbar(false)}>Danışmanlık</a>
+											<a
+												className='dropdown-menu-link'
+												onClick={() => setNavbar(false)}
+											>
+												Danışmanlık
+											</a>
 										</Link>
 										<Link href='/hizmetlerimiz/muhasebe'>
-											<a className='dropdown-menu-link' onClick={() => setNavbar(false)}>Muhasebe</a>
+											<a
+												className='dropdown-menu-link'
+												onClick={() => setNavbar(false)}
+											>
+												Muhasebe
+											</a>
 										</Link>
 									</div>
 								</a>
 							</Link>
 							<Link href='/iletisim'>
-								<a className='menu-link' onClick={() => setNavbar(false)}>İletişim</a>
+								<a className='menu-link' onClick={() => setNavbar(false)}>
+									İletişim
+								</a>
 							</Link>
 						</div>
 					</nav>

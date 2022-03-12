@@ -25,7 +25,7 @@ const Service = () => {
 					))}
 				</div>
 				<div className='service-link-box'>
-					<Link href='/'>
+					<Link href='/hizmetlerimiz/mali-musavirlik'>
 						<a className='service-link'>Daha Fazla</a>
 					</Link>
 				</div>
