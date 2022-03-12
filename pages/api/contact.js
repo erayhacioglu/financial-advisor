@@ -11,9 +11,9 @@ export default async (req, res) => {
 			user: process.env.user,
 			pass: process.env.pass,
 		},
-		// tls: {
-		// 	rejectUnauthorized: false,
-		// },
+		tls: {
+			rejectUnauthorized: false,
+		},
 	});
 
 	try {
