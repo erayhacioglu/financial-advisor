@@ -12,11 +12,11 @@ const Header = () => {
 					<div className='header-social'>
 						<div className='header-left'>
 							<i className='fas fa-phone' />
-							<span>+90 (507)-274-97-09</span>
+							<a href='tel:05072749709'>+90 (507)-274-97-09</a>
 						</div>
 						<div className='header-right'>
 							<i className='fas fa-envelope' />
-							<span>ugurmenekse@gmail.com</span>
+							<a href='mailto:ugurmenekse@gmail.com'>ugurmenekse@gmail.com</a>
 						</div>
 					</div>
 				</div>
