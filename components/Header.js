@@ -25,7 +25,7 @@ const Header = () => {
 				<div className='container'>
 					<nav className='navbar'>
 						<Link href='/'>
-							<a className='logo'>
+							<a className='logo' onClick={() => window.scrollTo({ top: 0 })}>
 								<img
 									src='https://marka-logo.com/wp-content/uploads/2020/09/Google-Logo.png'
 									alt='logo'

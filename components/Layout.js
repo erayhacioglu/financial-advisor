@@ -1,15 +1,17 @@
 import Header from './Header';
 import Footer from './Footer';
+import ScrollTo from './ScrollTo';
 import WhatsApp from './WhatsApp';
 
 const Layout = ({ children }) => {
 	return (
-		<div className='wrapper'>
+		<>
 			<Header />
 			{children}
+			<ScrollTo />
 			<WhatsApp />
 			<Footer />
-		</div>
+		</>
 	);
 };
 

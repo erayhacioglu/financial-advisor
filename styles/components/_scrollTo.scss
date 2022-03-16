@@ -1,0 +1,18 @@
+/*ScrollTo*/
+.scrollto-btn {
+	width: 45px;
+	height: 45px;
+	border-radius: 4px;
+	position: fixed;
+	right: 20px;
+	bottom: 95px;
+	z-index: 9998;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	background: $secondary-color;
+	@include text(1.5rem, #fff, 700);
+	&.active{
+		display:flex;
+	}
+}
