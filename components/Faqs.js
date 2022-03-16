@@ -7,6 +7,7 @@ const Faqs = () => {
 
 	return (
 		<div className='question-section'>
+			<a id="en-cok-sorulanlar"></a>
 			<div className='container'>
 				<SectionHeading heading='En Çok Sorulanlar' />
 				<div className='question'>

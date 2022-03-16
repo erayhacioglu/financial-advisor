@@ -135,8 +135,31 @@
 						border-radius: 4px;
 						margin-top: 5px;
 						transition: 300ms;
+						display: flex;
+						align-items: center;
+						justify-content: center;
 						&:hover {
 							background: $secondary-color;
+						}
+						&.disable {
+							background: #ccc;
+							cursor: not-allowed;
+						}
+						.spinner {
+							width: 25px;
+							height: 25px;
+							border: 2.5px solid gray;
+							border-radius: 50%;
+							animation: loading 1s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+							border-color: gray transparent gray;
+							@keyframes loading {
+								0% {
+									transform: rotate(0deg);
+								}
+								100% {
+									transform: rotate(360deg);
+								}
+							}
 						}
 					}
 				}

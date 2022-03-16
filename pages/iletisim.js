@@ -11,19 +11,27 @@ import axios from 'axios';
 const Contact = () => {
 	const [loading, setLoading] = useState(false);
 
-	const { handleSubmit, handleChange, handleBlur, values, errors, touched } =
-		useFormik({
-			initialValues: {
-				fullName: '',
-				email: '',
-				phone: '',
-				description: '',
-			},
-			onSubmit: (values) => {
-				handleContact(values);
-			},
-			validationSchema,
-		});
+	const {
+		handleSubmit,
+		handleChange,
+		handleBlur,
+		values,
+		errors,
+		touched,
+		resetForm,
+	} = useFormik({
+		initialValues: {
+			fullName: '',
+			email: '',
+			phone: '',
+			description: '',
+		},
+		onSubmit: (values) => {
+			handleContact(values);
+			resetForm();
+		},
+		validationSchema,
+	});
 
 	const handleContact = async (values) => {
 		let config = {
@@ -150,8 +158,9 @@ const Contact = () => {
 								<div className='contact-form-fields'>
 									<button
 										className={`contact-form-btn ${loading ? 'disable' : ''}`}
+										disabled={loading ? true : false}
 									>
-										{loading ? <span className='spinner'></span> : 'Gönder'}
+										{loading ? <div className='spinner'></div> : 'Gönder'}
 									</button>
 								</div>
 							</form>

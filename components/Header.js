@@ -12,7 +12,7 @@ const Header = () => {
 					<div className='header-social'>
 						<div className='header-left'>
 							<i className='fas fa-phone' />
-							<span>(507)-274-97-09</span>
+							<span>+90 (507)-274-97-09</span>
 						</div>
 						<div className='header-right'>
 							<i className='fas fa-envelope' />
@@ -24,13 +24,16 @@ const Header = () => {
 			<div className='header-bottom'>
 				<div className='container'>
 					<nav className='navbar'>
-						<div className='logo'>
-							<img
-								src='https://marka-logo.com/wp-content/uploads/2020/09/Google-Logo.png'
-								alt='logo'
-								className='logo-img'
-							/>
-						</div>
+						<Link href='/'>
+							<a className='logo'>
+								<img
+									src='https://marka-logo.com/wp-content/uploads/2020/09/Google-Logo.png'
+									alt='logo'
+									className='logo-img'
+								/>
+							</a>
+						</Link>
+
 						<div className='navbar-btn-box'>
 							<button className='navbar-btn' onClick={() => setNavbar(!navbar)}>
 								{navbar ? (

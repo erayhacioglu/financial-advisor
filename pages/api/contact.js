@@ -5,8 +5,8 @@ export default async (req, res) => {
 
 	const transporter = nodemailer.createTransport({
 		host: 'smtp.gmail.com',
-		port: 465,
-		secure: true,
+		port: 587,
+		secure: false,
 		auth: {
 			user: process.env.user,
 			pass: process.env.pass,
@@ -23,6 +23,7 @@ export default async (req, res) => {
 			subject: `West Mali Müşavirlik İletişim`,
 			html: `
       <p><strong>Ad Soyad : </strong>${fullName}</p><br/>
+      <p><strong>E-Mail : </strong>${email}</p><br/>
       <p><strong>Telefon : </strong>${phone}</p><br/>
       <p><strong>Açıklama : </strong>${description}</p>
       `,
