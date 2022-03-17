@@ -6,8 +6,10 @@ const PageHeader = ({ title, service }) => {
 		<div className='page-header-section'>
 			<div className='container'>
 				<div className='page-header'>
-					<span className='page-header-title'>{title}</span>
-					<div className='breadcrumbs'>
+					<span className='page-header-title' data-aos='fade-up'>
+						{title}
+					</span>
+					<div className='breadcrumbs' data-aos='fade-up'>
 						<Link href='/'>
 							<a>Anasayfa</a>
 						</Link>

@@ -70,7 +70,7 @@ const Contact = () => {
 						/>
 					</div>
 					<div className='contact'>
-						<div className='contact-content'>
+						<div className='contact-content' data-aos='fade-right'>
 							<h2 className='contact-title'>İletişim Bilgilerimiz</h2>
 							<div className='contact-info'>
 								{contactInfo.map((item, key) => (
@@ -83,7 +83,7 @@ const Contact = () => {
 								))}
 							</div>
 						</div>
-						<div className='contact-form-box'>
+						<div className='contact-form-box' data-aos='fade-left'>
 							<h2 className='contact-form-title'>Bize Yazın</h2>
 							<form className='contact-form' onSubmit={handleSubmit}>
 								<div className='contact-form-fields'>

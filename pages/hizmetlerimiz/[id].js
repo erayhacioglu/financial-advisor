@@ -23,7 +23,7 @@ const Service = () => {
 			<div className='service-page-section'>
 				<div className='container'>
 					<div className='service-page'>
-						<div className='service-page-menu'>
+						<div className='service-page-menu' data-aos='fade-right'>
 							{servicePage.map((item, key) => (
 								<Link href={`/hizmetlerimiz/${item.slug}`} key={key}>
 									<a
@@ -36,7 +36,7 @@ const Service = () => {
 								</Link>
 							))}
 						</div>
-						<div className='service-page-content'>
+						<div className='service-page-content' data-aos='fade-left'>
 							<div className='service-page-picture'>
 								<img
 									src={`../../${findService?.img}`}

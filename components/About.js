@@ -8,7 +8,7 @@ const About = () => {
 					<div className='about-photo'>
 						<img src='./about.jpg' alt='' className='about-img' />
 					</div>
-					<div className='about-content'>
+					<div className='about-content' data-aos='fade-left'>
 						<h1 className='about-content-title'>Neden West Mali Müşavirlik?</h1>
 						<p className='about-content-important-text'>
 							Mesleki hassasiyet ve gösterdiğimiz özen sayesinde West Mali

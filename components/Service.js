@@ -10,7 +10,7 @@ const Service = () => {
 				<div className='service'>
 					{services.map((item, key) => (
 						<Link href={`/hizmetlerimiz/${item.slug}`} key={key}>
-							<a className='service-box'>
+							<a className='service-box' data-aos='fade-right'>
 								<div className='service-icon'>
 									<img
 										src={item.img}

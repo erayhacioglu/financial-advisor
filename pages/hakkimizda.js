@@ -18,7 +18,7 @@ const About = () => {
 								className='about-page-img'
 							/>
 						</div>
-						<div className='about-page-content'>
+						<div className='about-page-content' data-aos='fade-up'>
 							<h2 className='about-page-title'>Biz Kimiz?</h2>
 							<p className='about-page-text'>
 								<span className='about-page-important'>

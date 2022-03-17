@@ -8,6 +8,7 @@
 		"start": "next start"
 	},
 	"dependencies": {
+		"aos": "^2.3.4",
 		"axios": "^0.26.1",
 		"formik": "^2.2.9",
 		"next": "12.1.0",

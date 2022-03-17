@@ -8,10 +8,10 @@ const CallToAction = () => {
 			<div className='action-section'>
 				<div className='container'>
 					<div className='action'>
-						<div className='action-picture'>
+						<div className='action-picture' data-aos='fade-right'>
 							<img src='./contact.svg' alt='' className='action-img' />
 						</div>
-						<div className='action-content'>
+						<div className='action-content' data-aos='fade-left'>
 							<h2 className='action-title'>Nasıl Yardımcı Olabiliriz?</h2>
 							<p className='action-text'>
 								Bizimle iletişime geçerek, fiyat alabilir aklınıza takılan

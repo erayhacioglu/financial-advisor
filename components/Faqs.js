@@ -7,18 +7,18 @@ const Faqs = () => {
 
 	return (
 		<div className='question-section'>
-			<a id="en-cok-sorulanlar"></a>
+			<a id='en-cok-sorulanlar'></a>
 			<div className='container'>
 				<SectionHeading heading='En Çok Sorulanlar' />
 				<div className='question'>
-					<div className='question-picture'>
+					<div className='question-picture' data-aos='fade-right'>
 						<img
 							src='./question.svg'
 							alt='question-image'
 							className='question-img'
 						/>
 					</div>
-					<div className='question-content'>
+					<div className='question-content' data-aos='fade-left'>
 						{questions.map((item, key) => (
 							<div className='question-box' key={key}>
 								<div
