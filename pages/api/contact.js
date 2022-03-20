@@ -1,35 +1,32 @@
-import nodemailer from 'nodemailer';
+import sgMail from '@sendgrid/mail';
 
 export default async (req, res) => {
-	const { fullName, email, phone, description } = req.body;
+	if (req.method === 'POST') {
+		const { fullName, email, phone, description } = req.body;
+		sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+		const msg = {
+			to: 'erayhacioglufreelancer@gmail.com', // Change to your recipient
+			from: 'erayhacioglufreelancer@gmail.com', // Change to your verified sender
+			subject: 'West Mali Müşavirlik İletişim',
 
-	const transporter = nodemailer.createTransport({
-		host: 'smtp.gmail.com',
-		port: 587,
-		secure: false,
-		auth: {
-			user: process.env.user,
-			pass: process.env.pass,
-		},
-		tls: {
-			rejectUnauthorized: false,
-		},
-	});
-
-	try {
-		const emailResponse = await transporter.sendMail({
-			from: email,
-			to: 'hacoglueray@gmail.com',
-			subject: `West Mali Müşavirlik İletişim`,
 			html: `
-      <p><strong>Ad Soyad : </strong>${fullName}</p><br/>
-      <p><strong>E-Mail : </strong>${email}</p><br/>
-      <p><strong>Telefon : </strong>${phone}</p><br/>
-      <p><strong>Açıklama : </strong>${description}</p>
-      `,
-		});
-		res.status(200).json({ msg: 'Form Gönderildi' });
-	} catch (err) {
-		console.log(err);
+            <p><strong>Ad Soyad : </strong>${fullName}</p><br/>
+            <p><strong>E-Mail : </strong>${email}</p><br/>
+            <p><strong>Telefon : </strong>${phone}</p><br/>
+            <p><strong>Açıklama : </strong>${description}</p>
+            `,
+		};
+		sgMail
+			.send(msg)
+			.then(() => {
+				console.log('Email sent');
+			})
+			.catch((error) => {
+				console.error(error);
+			});
+
+		res.status(200).json({ msg: 'ok' });
+	} else if (req.method !== 'POST') {
+		res.status(400).json({ msg: 'error' });
 	}
 };
