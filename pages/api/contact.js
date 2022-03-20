@@ -19,13 +19,13 @@ export default async (req, res) => {
 		sgMail
 			.send(msg)
 			.then(() => {
-				console.log('Email sent');
+				console.log('Email sent',{req.body});
 			})
 			.catch((error) => {
 				console.error(error);
 			});
 
-		res.status(200).json({ msg: 'ok' });
+		res.status(200).json({ msg: 'ok',req.body });
 	} else if (req.method !== 'POST') {
 		res.status(400).json({ msg: 'error' });
 	}
